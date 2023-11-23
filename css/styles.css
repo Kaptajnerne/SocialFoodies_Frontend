@@ -1,0 +1,41 @@
+.header {
+    background-color: white;
+}
+
+.footer {
+    background-color: white;
+}
+
+footer h5,
+footer p,
+footer a {
+    font-family: "Times New Roman";
+}
+
+footer h5 {
+    font-weight: bold;
+}
+
+.logo img {
+    width: 70px;
+    height: auto;
+}
+
+.search-box {
+    display: none;
+}
+
+.awesome-icon {
+    font-size: 24px;
+    color: #000000;
+}
+
+.page-link {
+    text-decoration: none;
+    color: black;
+    transition: border-bottom 0.3s, opacity 0.3s; /* Add transitions for both properties */
+}
+
+.page-link:hover {
+    opacity: 0.7;
+}
