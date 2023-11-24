@@ -21,6 +21,10 @@ footer h5 {
     height: auto;
 }
 
+.logo {
+    text-align: center;
+}
+
 .search-box {
     display: none;
 }
@@ -81,4 +85,21 @@ footer h5 {
     background-size: cover;
     padding: 50px;
     border-radius: 20px;
+}
+
+.banner-text {
+    margin: 20px 0;
+    text-align: center;
+    padding-top: 200px;
+    padding-right: 40px
+}
+
+.ice-cream-vote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
 }
