@@ -51,3 +51,34 @@ footer h5 {
     align-items: center;
     text-align: center;
 }
+
+.ice-cream-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.ice-cream-style {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    transition: opacity 0.3s;
+}
+
+.ice-cream-style:hover {
+    opacity: 0.7;
+}
+
+.ice-cream-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-row {
+    background-image: url('https://scontent.fcph2-1.fna.fbcdn.net/v/t1.15752-9/398267986_715841413477570_8855028933844727335_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8cd0a2&_nc_ohc=1AFv7byV6VAAX8rNGmK&_nc_ht=scontent.fcph2-1.fna&oh=03_AdSv4yhRFzlV6aJ08-Ha_TxRF1okHIUcPHfbcdb9e_50aQ&oe=658808B2');
+    background-size: cover;
+    padding: 50px;
+    border-radius: 20px;
+}
