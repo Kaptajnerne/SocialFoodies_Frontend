@@ -3,16 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Social Foodies</title>
-    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <!-- Awesome font -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<!-- Header -->
 <div id="header-container"></div>
 
 <div style="background-color: #a3d8e6">
@@ -28,59 +24,15 @@
     </div>
 </div>
 
-
 <div class="container" style="padding-top: 30px">
-    <div class="col-lg-10 offset-lg-1">
-        <div class="row">
-            <div class="col-lg-4 ice-cream-column" style="background-color: #d4f7ff;">
-                <a href=iceCream.html class="ice-cream-style">
-                    <img src="https://saltandstraw.com/cdn/shop/products/Classic-CookieDough-Scoop-Trasparent-Shadow_png_c952bce3-7a44-412a-ac27-ca5e14acc135_1000x1000.png?v=1674228953" class="ice-cream-img" alt="">
-                    <h3>Cookie dough</h3>
-                </a>
-            </div>
-            <div class="col-lg-4 ice-cream-column" style="background-color: #ffc6c6">
-                <a href="#" class="ice-cream-style">
-                    <img src="https://assets-global.website-files.com/610ad3ad234b4037b59c37dd/6168de16495ee0dd4d5dec0c_DFVANILLA_SCOOPSIMAGE_1200x800%20(1).png" class="ice-cream-img" alt="">
-                    <h3>Kjartanas Vanilje</h3>
-                </a>
-            </div>
-            <div class="col-lg-4 ice-cream-column" style="background-color: #fff7c5">
-                <a href="#" class="ice-cream-style">
-                    <img src="https://brandsitesplatform-res.cloudinary.com/image/fetch/w_auto:100,c_scale,q_auto:eco,f_auto,fl_lossy,dpr_auto,e_sharpen:85/https://assets.brandplatform.generalmills.com%2F-%2Fmedia%2Fproject%2Fgmi%2Fhaagendazs%2Fhaagendazs-master%2Fbsp%2Fhd%2Fproduct-images%2Fscoops%2Fblueberries-and-cream-v2.png%3Frev%3D3294e135fc7e425387d30524a033ad94" class="ice-cream-img">
-                    <h3>Rødkål</h3>
-                </a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 ice-cream-column" style="background-color: #ffc39a">
-                <a href=# class="ice-cream-style">
-                    <img src="https://www.carvel.com/-/media/carvel/menu/ice-cream/scooped/45-coffee_and_cream.png?v=1&d=20180327T225022Z" class="ice-cream-img" alt="">
-                    <h3>Kaffe Kage</h3>
-                </a>
-            </div>
-            <div class="col-lg-4 ice-cream-column" style="background-color: #d8ffc0">
-                <a href="#" class="ice-cream-style">
-                    <img src="https://clipart-library.com/images_k/ice-cream-scoop-transparent-background/ice-cream-scoop-transparent-background-20.png" class="ice-cream-img" alt="">
-                    <h3>Karamel</h3>
-                </a>
-            </div>
-            <div class="col-lg-4 ice-cream-column" style="background-color: #bcbde1">
-                <a href="#" class="ice-cream-style">
-                    <img src="https://saltandstraw.com/cdn/shop/products/Classic-Brownie-Scoop-Trasparent-Shadow_bd067867-975a-4fcc-a9d1-61162fab3c79_grande.png?v=1676400677" class="ice-cream-img" alt="">
-                    <h3>Brownie</h3>
-                </a>
-            </div>
-        </div>
-    </div>
+    <div class="row" id="iceCreamContainer"></div> <!-- Changed from col-lg-10 offset-lg-1 to row -->
 </div>
 
 <div style="margin-bottom: 50px"></div>
 
-<br>
-<!-- Footer -->
 <div id="footer-container"></div>
 
-<!-- JavaScript -->
+<script src="js/iceCream.js"></script>
 <script src="js/header.js"></script>
 <script src="js/footer.js"></script>
 </body>
