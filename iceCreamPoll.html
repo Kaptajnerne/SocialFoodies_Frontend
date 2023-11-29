@@ -6,6 +6,8 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Awesome font -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <!-- Custom CSS -->
@@ -15,7 +17,7 @@
 <!-- Header -->
 <div id="header-container"></div>
 
-
+<!-- Banner at the top of the page -->
 <div style="background-color: #e1b4b7">
     <div class="container">
         <div class="row">
@@ -30,6 +32,7 @@
     </div>
 </div>
 
+<!-- Jumbotron -->
 <div class="col-lg-10 offset-lg-1" style="padding-top: 30px">
     <div class="jumbotron">
         <p class="lead">Velkommen til vores månedlige isafstemning! Vær med til at bestem den næste is på menuen, og måske du vinder noget imens du er i gang.</p>
@@ -38,51 +41,50 @@
     </div>
 </div>
 
+<!-- Displays the poll options -->
 <div class="container" style="padding-top: 30px">
     <div class="row">
-        <div class="col-lg-4">
-            <div class="ice-cream-vote" style="background-color: #d4f7ff;">
-                <img src="https://www.deepsouthicecream.co.nz/assets/_800x800_crop_center-center_100_none/Rainbow-Scoop_2021-12-13-003851_ljsy.png"
-                     class="ice-cream-img" alt="">
-                <h3>Kiwi-Mango Magic</h3>
-                <p>Den friske smag af kiwi og mango smeltet sammen til en lækker sorbetis. Isen tager dig direkte til de tropiske øer, og lader dig slappe af.</p>
-                <p>Vegansk: Ja</p>
-                <p>Nødder: Nej</p>
-                <button class="btn btn-dark" onclick="vote('Option 1')">Stem</button>
+        <div id="poll-container"></div>
+    </div>
+</div>
+
+<br>
+
+<!-- Bootstrap Modal for Voting -->
+<div class="modal fade" id="voteModal" tabindex="-1" role="dialog" aria-labelledby="voteModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="voteModalLabel">Stem på din månedlige favorit isvariant</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="ice-cream-vote" style="background-color: #ffc6c6;">
-                <img src="https://saltandstraw.com/cdn/shop/files/DEC23-SCOOP-SUGAR-1200x1200_0d10f8fd-58b9-49ce-91e7-ed5d254c9f55_1000x1000.png?v=1700834472"
-                     class="ice-cream-img" alt="">
-                <h3>PB&J</h3>
-                <p>Smagen af frihed. Smagen af libtards. Smagen af fahrenheit. Smagen af feet. Det hele kulminerer her i Peanutbutter and Jelly(Syltetøj).</p>
-                <p>Vegansk: Nej</p>
-                <p>Nødder: Ja</p>
-                <button class="btn btn-dark" onclick="vote('Option 2')">Stem</button>
+            <div class="modal-body">
+                <form id="voteForm">
+                    <div class="form-group">
+                        <label for="email">Email adresse:</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <input type="hidden" id="pollOptionID">
+                </form>
             </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="ice-cream-vote" style="background-color: #fff7c5;">
-                <img src="https://www.carvel.com/-/media/carvel/menu/ice-cream/scooped/51-pistachio.png?v=1&d=20180420T163035Z"
-                     class="ice-cream-img" alt="">
-                <h3>Pickels</h3>
-                <p>Bare wow. Denne is er hvad vi karakteriserer som unik og oplevelsesværdig. Den friske søde smag af pickels, vil selv få de mest kræsne til at bukke under.</p>
-                <p>Vegansk: Nej</p>
-                <p>Nødder: Nej</p>
-                <button class="btn btn-dark" onclick="vote('Option 3')">Stem</button>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Luk</button>
+                <button type="button" class="btn btn-primary" id="submitVote">Send Stemme</button>
             </div>
         </div>
     </div>
 </div>
 
 
-<br>
 <!-- Footer -->
 <div id="footer-container"></div>
 
 <!-- JavaScript -->
-<script src="js/header.js"></script>
-<script src="js/footer.js"></script>
+<script type="module" src="js/header.js"></script>
+<script type="module" src="js/footer.js"></script>
+<script type="module" src="js/icecreampoll.js"></script>
 </body>
 </html>
+
