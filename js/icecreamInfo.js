@@ -16,20 +16,24 @@ async function fetchIceCreamDetails() {
 }
 
 // Create HTML for ice cream details
+// Create HTML for ice cream details
 function createIceCreamInfoHtml(iceCreamData) {
     return `
-        <div class="col-lg-6">
-            <div class="ice-cream-page-img">
-                <img src="${iceCreamData.imageUrl}"  class="ice-cream-page-img" alt="">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="ice-cream-page-img">
+                    <img src="${iceCreamData.imageUrl}"  class="ice-cream-page-img" alt="">
+                </div>
             </div>
-        </div>
-        <div class="col-lg-6">
-            <h1>${iceCreamData.name}</h1>
-            <p>Description: ${iceCreamData.description}</p>
-            <p>Vegan: ${iceCreamData.vegan}</p>
-            <p>Contains Nuts: ${iceCreamData.nuts}</p>
+            <div class="col-lg-6">
+                <h1>${iceCreamData.name}</h1>
+                <p>Description: ${iceCreamData.description}</p>
+                <p>Vegan: ${iceCreamData.vegan}</p>
+                <p>Contains Nuts: ${iceCreamData.nuts}</p>
+            </div>
         </div>
     `;
 }
+
 
 fetchIceCreamDetails();
