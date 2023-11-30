@@ -3,38 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Social Foodies</title>
-    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <!-- Awesome font -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<!-- Header -->
 <div id="header-container"></div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-lg-6">
-            <div class="ice-cream-page-img">
-                <img src="https://saltandstraw.com/cdn/shop/products/Classic-CookieDough-Scoop-Trasparent-Shadow_png_c952bce3-7a44-412a-ac27-ca5e14acc135_1000x1000.png?v=1674228953" class="ice-cream-page-img" alt="">
+<div style="background-color: #a3d8e6">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <h1 class="banner-text">Isvarianter</h1>
             </div>
-        </div>
-        <div class="col-lg-6">
-            <h1>Cookie Dough</h1>
-            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p>Vegan: No</p>
-            <p>Contains Nuts: No</p>
+            <div class="col-lg-4">
+                <img src="https://s3-eu-west-1.amazonaws.com/dk.coop.crowdfunding.prod/73f9d5dc-f8a2-4ede-9979-1eefa2b9d6a4/img-2306611763465828043.jpeg" alt="" style="max-width: 100%;">
+            </div>
         </div>
     </div>
 </div>
 
-<!-- Footer -->
+<div class="container" style="padding-top: 30px">
+    <div class="row" id="iceCreamContainer"></div> <!-- Changed from col-lg-10 offset-lg-1 to row -->
+</div>
+
+<div style="margin-bottom: 50px"></div>
+
 <div id="footer-container"></div>
 
-<!-- JavaScript -->
+<script type="module" src="js/iceCreams.js"></script>
 <script src="js/header.js"></script>
 <script src="js/footer.js"></script>
 </body>

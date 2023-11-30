@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d522f979-8d84-484a-8ed9-0c46860416bd" name="Changes" comment="page for specific ice cream">
+    <list default="true" id="d522f979-8d84-484a-8ed9-0c46860416bd" name="Changes" comment="lavet så backend is fremstår på siden">
+      <change afterPath="$PROJECT_DIR$/iceCreamDetail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/iceCreamDetail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="38b55321-4130-45cd-aa3e-c134084251ee" name="Changes by simonbangdessau" comment="" />
@@ -26,6 +28,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="developer" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -43,7 +50,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;developer&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;icecream-variants&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -64,9 +71,8 @@
       <updated>1700742888045</updated>
       <workItem from="1700742889223" duration="4242000" />
       <workItem from="1700778427177" duration="4229000" />
-      <workItem from="1701010395717" duration="168000" />
-      <workItem from="1701076649961" duration="918000" />
-      <workItem from="1701190723088" duration="658000" />
+      <workItem from="1701271102654" duration="73000" />
+      <workItem from="1701271540023" duration="148000" />
     </task>
     <task id="LOCAL-00001" summary="Header and Footer added">
       <option name="closed" value="true" />
@@ -76,31 +82,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700743199799</updated>
     </task>
-    <task id="LOCAL-00002" summary="HTML til iceCreamVarieties og redigering refakotering i de andre sider">
+    <task id="LOCAL-00002" summary="lavet så backend is fremstår på siden">
       <option name="closed" value="true" />
-      <created>1700836473118</created>
+      <created>1701197729786</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1700836473118</updated>
+      <updated>1701197729786</updated>
     </task>
-    <task id="LOCAL-00003" summary="iceCreamVote.html is done, and some refactoring">
-      <option name="closed" value="true" />
-      <created>1700842279228</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1700842279228</updated>
-    </task>
-    <task id="LOCAL-00004" summary="page for specific ice cream">
-      <option name="closed" value="true" />
-      <created>1700847351231</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1700847351231</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,8 +99,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Header and Footer added" />
     <MESSAGE value="HTML for iceCreamSuggestion side" />
-    <MESSAGE value="iceCreamVote.html is done, and some refactoring" />
-    <MESSAGE value="page for specific ice cream" />
-    <option name="LAST_COMMIT_MESSAGE" value="page for specific ice cream" />
+    <MESSAGE value="lavet så backend is fremstår på siden" />
+    <option name="LAST_COMMIT_MESSAGE" value="lavet så backend is fremstår på siden" />
   </component>
 </project>
