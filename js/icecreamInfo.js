@@ -21,7 +21,7 @@ function createIceCreamInfoHtml(iceCreamData) {
         <div class="row">
             <div class="col-lg-6">
                 <div class="ice-cream-page-img">
-                    <img src="${iceCreamData.imageUrl}"  class="ice-cream-page-img" alt="">
+                    <img src="${iceCreamData.imageUrl}" class="img-fluid" alt="${iceCreamData.name}">
                 </div>
             </div>
             <div class="col-lg-6">
@@ -33,6 +33,5 @@ function createIceCreamInfoHtml(iceCreamData) {
         </div>
     `;
 }
-
 
 fetchIceCreamDetails();

@@ -5,20 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d522f979-8d84-484a-8ed9-0c46860416bd" name="Changes" comment="working on adminIceCreams.html">
-      <change afterPath="$PROJECT_DIR$/adminHeader.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/adminIceCreamInfo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/adminIceCreamPoll.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/adminIceCreamSuggestion.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/createIceCream.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/editIceCream.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/adminheader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/adminicecreaminfo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/adminicecreams.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/createicecream.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminIceCreams.html" beforeDir="false" afterPath="$PROJECT_DIR$/adminIceCreams.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminIndex.html" beforeDir="false" afterPath="$PROJECT_DIR$/adminIndex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/icecreamInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/icecreamInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/editicecream.js" afterDir="false" />
     </list>
     <list id="38b55321-4130-45cd-aa3e-c134084251ee" name="Changes by simonbangdessau" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -61,7 +48,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "adminIceCreams-crud",
+    "git-widget-placeholder": "developer",
     "ignore.virus.scanning.warn.message": "true",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
