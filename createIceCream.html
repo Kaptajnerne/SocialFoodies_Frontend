@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Ice Cream - Social Foodies</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<!-- Header -->
+<div id="header-container"></div>
+
+<!-- Create Ice Cream -->
+<div class="container mt-4">
+    <h2>Create Ice Cream</h2>
+    <form id="create-ice-cream-form">
+        <div class="mb-3">
+            <label for="ice-cream-name" class="form-label">Ice Cream Name</label>
+            <input type="text" class="form-control" id="ice-cream-name" name="ice-cream-name" required>
+        </div>
+        <div class="mb-3">
+            <label for="ice-cream-description" class="form-label">Description</label>
+            <textarea class="form-control" id="ice-cream-description" name="ice-cream-description" rows="3" required></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="ice-cream-vegan" class="form-label">Vegan</label>
+            <select class="form-select" id="ice-cream-vegan" name="ice-cream-vegan" required>
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="ice-cream-nuts" class="form-label">Contains Nuts</label>
+            <select class="form-select" id="ice-cream-nuts" name="ice-cream-nuts" required>
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="ice-cream-image-url" class="form-label">Image URL</label>
+            <input type="text" class="form-control" id="ice-cream-image-url" name="ice-cream-image-url" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Create Ice Cream</button>
+    </form>
+</div>
+
+<!-- Footer -->
+<div id="footer-container"></div>
+
+<!-- JavaScript -->
+<script src="js/adminheader.js"></script>
+<script src="js/footer.js"></script>
+<script type="module" src="js/createIceCream.js"></script>
+</body>
+</html>

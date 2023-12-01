@@ -4,11 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d522f979-8d84-484a-8ed9-0c46860416bd" name="Changes" comment="lavet så backend is fremstår på siden">
-      <change beforePath="$PROJECT_DIR$/iceCreamInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/iceCreamInfo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iceCreams.html" beforeDir="false" afterPath="$PROJECT_DIR$/iceCreams.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/iceCreamInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/icecreamInfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/iceCreams.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/icecreams.js" afterDir="false" />
+    <list default="true" id="d522f979-8d84-484a-8ed9-0c46860416bd" name="Changes" comment="working on adminIceCreams.html">
+      <change afterPath="$PROJECT_DIR$/adminHeader.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adminIceCreamInfo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adminIceCreamPoll.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adminIceCreamSuggestion.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/createIceCream.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/editIceCream.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/adminheader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/adminicecreaminfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/adminicecreams.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/createicecream.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminIceCreams.html" beforeDir="false" afterPath="$PROJECT_DIR$/adminIceCreams.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminIndex.html" beforeDir="false" afterPath="$PROJECT_DIR$/adminIndex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/icecreamInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/icecreamInfo.js" afterDir="false" />
     </list>
     <list id="38b55321-4130-45cd-aa3e-c134084251ee" name="Changes by simonbangdessau" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +61,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "developer",
+    "git-widget-placeholder": "adminIceCreams-crud",
     "ignore.virus.scanning.warn.message": "true",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -62,6 +72,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tobia\IdeaProjects\SocialFoodies_Frontend\js" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -91,7 +106,23 @@
       <option name="project" value="LOCAL" />
       <updated>1701197729786</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="login successful">
+      <option name="closed" value="true" />
+      <created>1701350702089</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701350702089</updated>
+    </task>
+    <task id="LOCAL-00004" summary="working on adminIceCreams.html">
+      <option name="closed" value="true" />
+      <created>1701436720754</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1701436720754</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,6 +132,8 @@
     <MESSAGE value="Header and Footer added" />
     <MESSAGE value="HTML for iceCreamSuggestion side" />
     <MESSAGE value="lavet så backend is fremstår på siden" />
-    <option name="LAST_COMMIT_MESSAGE" value="lavet så backend is fremstår på siden" />
+    <MESSAGE value="login successful" />
+    <MESSAGE value="working on adminIceCreams.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="working on adminIceCreams.html" />
   </component>
 </project>

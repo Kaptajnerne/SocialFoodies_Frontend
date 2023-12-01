@@ -21,7 +21,7 @@ function createIceCreamInfoHtml(iceCreamData) {
         <div class="row">
             <div class="col-lg-6">
                 <div class="ice-cream-page-img">
-                    <img src="${iceCreamData.imageUrl}"  class="ice-cream-page-img" alt="">
+                    <img src="${iceCreamData.imageUrl}" class="ice-cream-page-img" alt="">
                 </div>
             </div>
             <div class="col-lg-6">
@@ -29,10 +29,19 @@ function createIceCreamInfoHtml(iceCreamData) {
                 <p>Description: ${iceCreamData.description}</p>
                 <p>Vegan: ${iceCreamData.vegan}</p>
                 <p>Contains Nuts: ${iceCreamData.nuts}</p>
+                <button class="btn btn-warning" onclick="window.location.href='editIceCream.html?id=${iceCreamData.iceCreamID}'">Edit Ice Cream</button>
+                <button class="btn btn-danger" onclick="confirmDelete()">Delete Ice Cream</button>
             </div>
         </div>
     `;
 }
 
-
+// Call the function
 fetchIceCreamDetails();
+
+function confirmDelete() {
+    if (confirm("Are you sure you want to delete this ice cream?")) {
+        // Delete logic here
+        console.log("Ice cream deleted!");
+    }
+}
