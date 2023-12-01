@@ -40,26 +40,30 @@
     <div class="row justify-content-center" id="form-row">
         <div class="col-md-8" style="background-color: white; padding: 10px; border-radius: 20px;">
             <div class="form-container">
-                <form>
+                <form id="iceCreamForm">
                     <div class="form-group" style="font-weight: bold">
                         <label for="iceCreamName">Isens navn</label>
-                        <input type="text" class="form-control" id="iceCreamName"
-                               placeholder="Kiwi-Mango Magic">
+                        <input type="text" class="form-control" id="iceCreamName"placeholder="Kiwi-Mango Magic">
                     </div>
                     <div class="form-group" style="font-weight: bold">
                         <label for="description">Beskrivelse</label>
-                        <textarea class="form-control" id="description" rows="4"
-                                  placeholder="Kiwi-Mango Magic er en forfriskende sorbetis, der bringer smagsløgene på eventyr til fjerne tropiske øer. "></textarea>
+                        <textarea class="form-control" id="description" rows="4" placeholder="Kiwi-Mango Magic er en forfriskende sorbetis, der bringer smagsløgene på eventyr til fjerne tropiske øer. "></textarea>
                     </div>
                     <div class="form-check" style="font-weight: bold">
-                        <input class="form-check-input" type="checkbox" id="isVegan">
+                        <input class="form-check-input" type="checkbox" id="isVegan" >
                         <label class="form-check-label" for="isVegan">Er isen vegansk? (Gelato eller Sorbetis)</label>
                     </div>
                     <div class="form-check" style="font-weight: bold">
                         <input class="form-check-input" type="checkbox" id="containsNuts">
                         <label class="form-check-label" for="containsNuts">Indeholder isen nødder?</label>
                     </div>
-                    <button type="submit" class="btn btn-dark mt-3">Submit</button>
+                    <br>
+                    <div class="form-group" style="font-weight: bold">
+                        <label for="email">Din e-mail</label>
+                        <input type="email" class="form-control" id="email" placeholder="example@example.com">
+                    </div>
+
+                    <button type="button" class="btn btn-dark mt-3" id="submitButton">Submit</button>
                 </form>
             </div>
         </div>
@@ -72,5 +76,6 @@
 <!-- JavaScript -->
 <script src="js/header.js"></script>
 <script src="js/footer.js"></script>
+<script type="module" src="js/icecreamsuggestion.js"></script>
 </body>
 </html>
