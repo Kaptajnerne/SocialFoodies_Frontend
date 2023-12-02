@@ -1,9 +1,9 @@
 const submitButton = document.getElementById("submitButton");
 
 async function submitForm() {
-    // Get the form element
     const iceCreamForm = document.getElementById("iceCreamForm");
 
+    //Collect data
     const formData = {
         name: iceCreamForm.querySelector("#iceCreamName").value,
         description: iceCreamForm.querySelector("#description").value,
@@ -12,6 +12,7 @@ async function submitForm() {
         email: iceCreamForm.querySelector("#email").value,
     };
 
+    //Send data with AJAX
     try {
         const response = await fetch("http://localhost:8080/suggestion", {
             method: "POST",

@@ -2,9 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Social Foodies</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Awesome font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+<!-- Header -->
+<div id="header-container"></div>
 
+<!-- Banner at the top of the page -->
+<div style="background-color: #fff1bc">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <h1 class="banner-text">Håndter is-anbefalinger!</h1>
+            </div>
+            <div class="col-lg-4">
+                <img src="https://static.wixstatic.com/media/f8e055_80371c11a52d4c8d9278e1a6924ea50a~mv2.png/v1/crop/x_46,y_61,w_1852,h_2939/fill/w_484,h_768,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/AI_Image%20Ice%20Cream%20cones.png"
+                     alt="" style="max-width: 60%; padding-top: 10px; padding-bottom: 10px">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Jumbotron text -->
+<div class="col-lg-10 offset-lg-1" style="padding-top: 30px">
+    <div class="jumbotron">
+        <p class="lead">Her kan du håndtere alle is-anbefalingerne vi har modtaget, og vælge om de skal konverteres over til en kundeis eller slettes.</p>
+        <hr class="my-4">
+        <p>Ved at klikke på en anbefaling, bliver kortet ført over på den anden side. Her kommer knappen: "Konverter til kundeis", når knappen trykkes bliver isen lavet til en kundeis og gemt i systemet. (Husk på: Du kan altid slettes eller redigere en kundeis på et senere tidspunkt)</p>
+    </div>
+    <br>
+</div>
+
+<!-- Ice cream suggestions -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+            <h3>Is-Anbefalinger</h3>
+            <hr class="my-4">
+            <div class="row" id="suggestion-container">
+                <!-- Suggestions -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<div id="footer-container"></div>
+
+<!-- JavaScript -->
+<script type="module" src="js/adminhandlesuggestions.js"></script>
+<script src="js/adminheader.js"></script>
+<script src="js/footer.js"></script>
 </body>
 </html>
