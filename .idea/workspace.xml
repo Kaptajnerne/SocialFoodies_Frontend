@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d522f979-8d84-484a-8ed9-0c46860416bd" name="Changes" comment="working on adminIceCreams.html">
-      <change afterPath="$PROJECT_DIR$/js/editicecream.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/editSuggestion.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/editsuggestion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminIceCreamSuggestion.html" beforeDir="false" afterPath="$PROJECT_DIR$/adminIceCreamSuggestion.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/adminhandlesuggestions.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/adminhandlesuggestions.js" afterDir="false" />
     </list>
     <list id="38b55321-4130-45cd-aa3e-c134084251ee" name="Changes by simonbangdessau" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +52,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "developer",
+    "git-widget-placeholder": "edit-suggestion",
     "ignore.virus.scanning.warn.message": "true",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",

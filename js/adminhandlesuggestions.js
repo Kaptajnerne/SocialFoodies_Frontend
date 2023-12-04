@@ -31,12 +31,43 @@ function createSuggestionHtml(suggestionData) {
                     <p class="suggestion-card-font">Vegansk: ${suggestionData.vegan}</p>
                     <p class="suggestion-card-font">Nødder: ${suggestionData.nuts}</p>
                     <button class="btn btn-outline-dark convertToIceCream" data-suggestion='${JSON.stringify(suggestionData)}'>Konverter til kundeis</button>
+                    <a href="editSuggestion.html?id=${suggestionData.iceCreamSuggestionID}" class="btn btn-outline-secondary">Rediger</a>
+                    <button class="btn btn-outline-danger deleteSuggestion" data-suggestion-id="${suggestionData.iceCreamSuggestionID}">Slet</button>
+                </div>
                 </div>
             </div>
         </div>
     `;
     return html;
+
 }
+
+suggestionContainer.addEventListener("click", async (event) => {
+    if (event.target.classList.contains("deleteSuggestion")) {
+        const suggestionId = event.target.getAttribute("data-suggestion-id");
+        const confirmed = confirm("Er du sikker på, at du vil slette denne is-anbefaling?");
+
+        if (confirmed) {
+            try {
+                const response = await fetch(`http://localhost:8080/suggestion/${suggestionId}`, {
+                    method: "DELETE",
+                });
+
+                if (response.ok) {
+                    alert("Is-anbefaling slettet!");
+                    // Reload the suggestions after deletion
+                    window.location.href = 'adminIceCreamSuggestion.html';
+                } else {
+                    console.error("Error deleting suggestion");
+                }
+            } catch (error) {
+                console.error("Error deleting suggestion:", error);
+            }
+        }
+    }
+});
+
+
 
 async function convertToIceCream(suggestionData) {
     //Collect data
@@ -78,7 +109,11 @@ suggestionContainer.addEventListener("click", (event) => {
     if (event.target.classList.contains("convertToIceCream")) {
         const suggestionData = JSON.parse(event.target.getAttribute("data-suggestion"));
         convertToIceCream(suggestionData);
+    } else if (event.target.classList.contains("editSuggestion")) {
+        const suggestionId = event.target.getAttribute("data-suggestion-id");
+        editSuggestion(suggestionId);
     }
 });
+
 
 fetchSuggestionDetails();
