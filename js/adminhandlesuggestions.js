@@ -5,11 +5,11 @@ const suggestionContainer = document.getElementById("suggestion-container");
 //Fetch Suggestion data
 async function fetchSuggestionDetails() {
     try {
-        const iceCreamDataArray = await fetchAnyUrl(`http://localhost:8080/suggestion`);
+        const suggestionDataArray = await fetchAnyUrl(`http://localhost:8080/suggestion`);
         const row = document.createElement("div");
         row.className = "row";
 
-        iceCreamDataArray.forEach((suggestionData) => {
+        suggestionDataArray.forEach((suggestionData) => {
             const suggestionHtml = createSuggestionHtml(suggestionData);
             row.innerHTML += suggestionHtml;
         });
