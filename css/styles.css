@@ -123,3 +123,14 @@ footer h5 {
 .suggestion-card-font {
     font-size: 16px;
 }
+
+.card-img {
+    width: 100%; /* Set the width to 100% to make all images the same width */
+    height: 300px; /* Maintain the aspect ratio */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+.row:not(:last-child) {
+    margin-bottom: 20px;
+}
+
