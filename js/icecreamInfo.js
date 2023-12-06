@@ -4,7 +4,7 @@ const iceCreamInfoContainer = document.getElementById("ice-cream-info");
 const urlParams = new URLSearchParams(window.location.search);
 const iceCreamId = urlParams.get('id');
 
-// Fetch ice cream details
+//Fetch ice cream details
 async function fetchIceCreamDetails() {
     try {
         const iceCreamData = await fetchAnyUrl(`http://localhost:8080/iceCreams/${iceCreamId}`);

@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const deleteIceCreamForm = document.getElementById('delete-iceCream-form');
     const iceCreamIdInput = document.getElementById('iceCream-id');
 
-    // Get iceCream ID from URL query parameter
     const urlParams = new URLSearchParams(window.location.search);
     const iceCreamId = urlParams.get('id');
 
@@ -21,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function () {
     deleteIceCreamForm.addEventListener('submit', function (event) {
         event.preventDefault();
 
-        // Delete iceCream
         deleteIceCream();
     });
 
@@ -43,6 +41,5 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Fetch and populate iceCream details on page load
     fetchIceCreamDetails();
 });

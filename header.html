@@ -1,68 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Header</title>
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  <!-- Awesome font -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <title>Header</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Awesome font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 <p class="text-center">Ved ordrer under 500 kr. tillægges et administratiobsgebyt på 100 kr.</p>
 <hr>
 <header class="header">
-  <div class="container d-flex justify-content-between align-items-center">
+    <div class="container d-flex justify-content-between align-items-center">
 
-    <!-- Chatten search box -->
-    <div class="search-box">
-      <!-- Add your search input and button here -->
-      <!-- Example: -->
-      <input type="text" placeholder="Search...">
-      <button>Search</button>
+        <div class="search-icon" onclick="toggleSearch()">
+            <i class="fas fa-search awesome-icon"></i>
+        </div>
+        <div class="logo">
+            <a href="index.html">
+                <img src="https://www.socialfoodies.dk/cdn/shop/files/sf-logo_a63109d4-80cf-4086-b667-80af0527b585.png?v=1698509172&width=100"
+                     alt="Logo">
+            </a>
+        </div>
+        <div>
+            <a href="login.html"><i class="far fa-user awesome-icon"></i></a>
+        </div>
     </div>
-
-    <div class="search-icon" onclick="toggleSearch()">
-      <i class="fas fa-search awesome-icon"></i>
+    <!-- Row of pages -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col text-center">
+                <a href="iceCreamSuggestion.html" class="text-dark page-link">Anbefal en is</a>
+            </div>
+            <div class="col text-center">
+                <a href="iceCreams.html" class="text-dark page-link">Isvarianter</a>
+            </div>
+            <div class="col text-center">
+                <a id="current-poll-header" class="text-dark page-link">Stem på månedens is</a>
+            </div>
+        </div>
     </div>
-    <div class="logo">
-      <a href="index.html">
-        <img src="https://www.socialfoodies.dk/cdn/shop/files/sf-logo_a63109d4-80cf-4086-b667-80af0527b585.png?v=1698509172&width=100" alt="Logo">
-      </a>
-    </div>
-    <div>
-      <a href="login.html"><i class="far fa-user awesome-icon"></i></a>
-    </div>
-  </div>
-  <!-- Row of pages -->
-  <div class="container mt-4">
-    <div class="row">
-      <div class="col text-center">
-        <a href="iceCreamSuggestion.html" class="text-dark page-link">Anbefal en is</a>
-      </div>
-      <div class="col text-center">
-        <a href="iceCreams.html" class="text-dark page-link">Isvarianter</a>
-      </div>
-      <div class="col text-center">
-        <a href="iceCreamPoll.html" class="text-dark page-link">Stem på månedens is</a>
-      </div>
-    </div>
-  </div>
-  <hr>
+    <hr>
 </header>
 
-<script>
-  //Chatten
-  // JavaScript function to toggle the search box
-  function toggleSearch() {
-    const searchBox = document.querySelector('.search-box');
-    searchBox.style.display = (searchBox.style.display === 'block') ? 'none' : 'block';
-  }
-</script>
 
+<script type="module" src="js/getCurrentPoll.js"></script>
 </body>
 </html>
