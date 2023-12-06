@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const editCustomerIceCreamForm = document.getElementById('edit-customer-iceCream-form');
+    const editCustomerIceCreamForm = document.getElementById('edit-Customer-IceCream-form');
     const customerIceCreamIdInput = document.getElementById('customer-IceCream-id');
     const nameInput = document.getElementById('name');
     const descriptionInput = document.getElementById('description');
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Get Customer iceCream ID from URL query parameter
     const urlParams = new URLSearchParams(window.location.search);
-    const iceCreamId = urlParams.get('id');
+    const customerIceCreamId = urlParams.get('id');
 
     // Fetch Customer iceCream details and populate the form
     async function fetchCustomerIceCreamDetails() {
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const response = await fetch(`http://localhost:8080/customerIceCreams/${customerIceCreamId}`);
             const customerIceCream = await response.json();
 
-            costmerIceCreamIdInput.value = customerIceCream.customerIceCreamID;
+            customerIceCreamIdInput.value = customerIceCream.customerIceCreamID;
             nameInput.value = customerIceCream.name;
             descriptionInput.value = customerIceCream.description;
             nutsInput.checked = customerIceCream.nuts; // use .checked for checkboxes
@@ -56,15 +56,15 @@ document.addEventListener('DOMContentLoaded', function () {
             if (response.ok) {
                 alert('Customer IceCream details updated successfully!');
                 // Redirect to iceCream management page after successful update
-                window.location.href = 'adminIceCreamInfo.html?id=' + iceCreamId;
+                window.location.href = 'adminCustomerIceCreamInfo.html?id=' + customerIceCreamId;
             } else {
-                console.error('Error updating iceCream details');
+                console.error('Error updating customer iceCream details');
             }
         } catch (error) {
-            console.error('Error updating iceCream details:', error);
+            console.error('Error updating customer iceCream details:', error);
         }
     }
 
     // Fetch and populate iceCream details on page load
-    fetchIceCreamDetails();
+    fetchCustomerIceCreamDetails();
 });

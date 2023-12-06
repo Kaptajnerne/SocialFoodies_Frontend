@@ -35,7 +35,7 @@ function createCustomerIceCreamInfoHtml(customerIceCreamData) {
                 <p>Contains Nuts: ${customerIceCreamData.nuts}</p>
             </div>
             <div class="col-lg-12 mt-3">
-                <button class="btn btn-primary float-end mx-2" onclick="window.location.href='editCustomerIceCream.html?id=${customerIceCreamData.customerIceCreamId}'">Edit</button>
+                <button class="btn btn-primary float-end mx-2" onclick="window.location.href='editCustomerIceCream.html?id=${customerIceCreamData.customerIceCreamID}'">Edit</button>
                 <button id="delete-button" class="btn btn-danger float-end">Delete</button>
             </div>
         </div>
