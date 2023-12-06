@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d522f979-8d84-484a-8ed9-0c46860416bd" name="Changes" comment="working on adminIceCreams.html">
-      <change afterPath="$PROJECT_DIR$/editSuggestion.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/editsuggestion.js" afterDir="false" />
+    <list default="true" id="d522f979-8d84-484a-8ed9-0c46860416bd" name="Changes" comment="Convert suggestion to customer ice cream.">
+      <change afterPath="$PROJECT_DIR$/adminAllPolls.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adminPollDetails.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/adminallpolls.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/adminpollinfo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminIceCreamSuggestion.html" beforeDir="false" afterPath="$PROJECT_DIR$/adminIceCreamSuggestion.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminIceCreamPoll.html" beforeDir="false" afterPath="$PROJECT_DIR$/adminIceCreamPoll.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminIceCreams.html" beforeDir="false" afterPath="$PROJECT_DIR$/adminIceCreams.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/adminhandlesuggestions.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/adminhandlesuggestions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/icecreampoll.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/icecreampoll.js" afterDir="false" />
     </list>
     <list id="38b55321-4130-45cd-aa3e-c134084251ee" name="Changes by simonbangdessau" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +28,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -52,7 +56,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "edit-suggestion",
+    "git-widget-placeholder": "admin-icecream-poll",
     "ignore.virus.scanning.warn.message": "true",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -60,6 +64,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -113,7 +118,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701436720754</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Convert suggestion to customer ice cream.">
+      <option name="closed" value="true" />
+      <created>1701526650168</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1701526650168</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +138,7 @@
     <MESSAGE value="lavet så backend is fremstår på siden" />
     <MESSAGE value="login successful" />
     <MESSAGE value="working on adminIceCreams.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="working on adminIceCreams.html" />
+    <MESSAGE value="Convert suggestion to customer ice cream." />
+    <option name="LAST_COMMIT_MESSAGE" value="Convert suggestion to customer ice cream." />
   </component>
 </project>

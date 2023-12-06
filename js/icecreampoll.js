@@ -1,13 +1,13 @@
 import {fetchAnyUrl} from "/js/modulejson.js";
 
-const movieInfoContainer = document.getElementById("poll-container");
+const pollOptionContainer = document.getElementById("poll-container");
 const urlParams = new URLSearchParams(window.location.search);
 const pollID = urlParams.get('id');
 
 //Fetch poll details and create HTML for poll options
 async function fetchPollDetails() {
     try {
-        const pollDataArray = await fetchAnyUrl(`http://localhost:8080/poll/${pollID}`);
+        const pollDataArray = await fetchAnyUrl(`http://localhost:8080/pollOption/poll/${pollID}`);
         const row = document.createElement("div");
         row.className = "row";
 
@@ -15,7 +15,7 @@ async function fetchPollDetails() {
             const pollHtml = createPollHtml(pollData);
             row.innerHTML += pollHtml;
         });
-        movieInfoContainer.appendChild(row);
+        pollOptionContainer.appendChild(row);
     } catch (error) {
         console.error("Error fetching poll details:", error);
     }
