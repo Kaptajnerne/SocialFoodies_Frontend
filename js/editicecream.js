@@ -7,11 +7,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const veganInput = document.getElementById('vegan');
     const imageUrlInput = document.getElementById('ImageUrl');
 
-    // Get iceCream ID from URL query parameter
     const urlParams = new URLSearchParams(window.location.search);
     const iceCreamId = urlParams.get('id');
 
-    // Fetch iceCream details and populate the form
+    //Fetch iceCream details and populate the form
     async function fetchIceCreamDetails() {
         try {
             const response = await fetch(`http://localhost:8080/iceCreams/${iceCreamId}`);
@@ -20,9 +19,9 @@ document.addEventListener('DOMContentLoaded', function () {
             iceCreamIdInput.value = iceCream.iceCreamID;
             nameInput.value = iceCream.name;
             descriptionInput.value = iceCream.description;
-            nutsInput.checked = iceCream.nuts; // use .checked for checkboxes
-            veganInput.checked = iceCream.vegan; // use .checked for checkboxes
-            imageUrlInput.value = iceCream.imageUrl; // Corrected variable name
+            nutsInput.checked = iceCream.nuts;
+            veganInput.checked = iceCream.vegan;
+            imageUrlInput.value = iceCream.imageUrl;
         } catch (error) {
             console.error('Error fetching ice cream details:', error);
         }
@@ -36,10 +35,9 @@ document.addEventListener('DOMContentLoaded', function () {
             description: descriptionInput.value,
             nuts: nutsInput.checked,
             vegan: veganInput.checked,
-            imageUrl: imageUrlInput.value // Corrected variable name
+            imageUrl: imageUrlInput.value
         };
 
-        // Update iceCream details
         updateIceCream(updatedIceCream);
     });
 
@@ -55,7 +53,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
             if (response.ok) {
                 alert('IceCream details updated successfully!');
-                // Redirect to iceCream management page after successful update
                 window.location.href = 'adminIceCreamInfo.html?id=' + iceCreamId;
             } else {
                 console.error('Error updating iceCream details');
@@ -65,6 +62,5 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Fetch and populate iceCream details on page load
     fetchIceCreamDetails();
 });

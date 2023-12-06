@@ -19,14 +19,11 @@ function createPollInfoHtml(pollData, pollOptionsData) {
                 <h5>Start date: ${pollData.startDate}</h5>
                 <h5>End date: ${pollData.endDate}</h5>
             </div>
-            <div class="col-lg-9" id="poll-options-container">
-                <div class="row">
-                    ${pollOptionsHtml}
-                </div>
+            <div class="col-lg-9" id="poll-options-container" style="display: flex; flex-wrap: nowrap;">
+                ${pollOptionsHtml}
             </div>
         </div>
     `;
-
 }
 
 // Fetch poll details and poll options when the page loads
@@ -41,12 +38,12 @@ async function fetchPollDetails() {
     }
 }
 
-//HTML for pollOption details
+// HTML for pollOption details
 function createPollOptionsHtml(pollOptionData) {
     let html = "";
     if (pollOptionData.iceCream !== null) {
         html = `
-            <div class="col-lg-4 card" style="margin: 0px;"> <!-- Få noget margin mellem hver card, uden det går ned på næste række. col-lg-3 er måske for småt-->
+            <div class="card" style="width: 300px; margin-right: 20px;">
                 <div class="card-body">
                     <img src="${pollOptionData.iceCream.imageUrl}" class="ice-cream-img" alt="">
                     <h3>${pollOptionData.iceCream.name}</h3>
@@ -59,7 +56,7 @@ function createPollOptionsHtml(pollOptionData) {
         `;
     } else if (pollOptionData.customerIceCream !== null) {
         html = `
-            <div class="col-lg-4 card" style="margin: 5px">
+            <div class="card" style="width: 300px; margin-right: 20px;">
                 <div class="card-body">
                     <img src="${pollOptionData.customerIceCream.imageUrl}" class="ice-cream-img" alt="">
                     <h3>${pollOptionData.customerIceCream.name}</h3>
@@ -67,6 +64,7 @@ function createPollOptionsHtml(pollOptionData) {
                     <p>${pollOptionData.customerIceCream.description}</p>
                     <p>Vegansk: ${pollOptionData.customerIceCream.vegan}</p>
                     <p>Nødder: ${pollOptionData.customerIceCream.nuts}</p>
+                    <p style="font-weight: bold">Total votes: ${pollOptionData.totalVotes}</p>
                 </div>
             </div>
         `;
@@ -75,3 +73,4 @@ function createPollOptionsHtml(pollOptionData) {
 }
 
 fetchPollDetails();
+

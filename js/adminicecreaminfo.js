@@ -42,7 +42,7 @@ function createIceCreamInfoHtml(iceCreamData) {
     `;
 }
 
-// Function to confirm and initiate delete
+// Function to confirm delete
 function confirmDelete(iceCreamId) {
     const confirmation = confirm("Are you sure you want to delete this ice cream?");
     if (confirmation) {
@@ -51,7 +51,6 @@ function confirmDelete(iceCreamId) {
     }
 }
 
-// Function to delete ice cream
 // Function to delete ice cream
 async function deleteIceCream(iceCreamId) {
     try {

@@ -17,7 +17,7 @@ async function fetchIceCreamDetails() {
     }
 }
 
-// Html for ice creams
+//Html for ice creams
 function createIceCreamHtml(iceCreamData) {
     const html = `
         <div class="col-lg-4 ice-cream-column" style="background-color: #e1b4b7">
@@ -29,7 +29,5 @@ function createIceCreamHtml(iceCreamData) {
     `;
     return html;
 }
-
-// Call the function
 
 fetchIceCreamDetails();

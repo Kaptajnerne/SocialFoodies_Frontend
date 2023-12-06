@@ -87,7 +87,7 @@ async function submitVote() {
 }
 
 // Event listener to open vote modal
-movieInfoContainer.addEventListener('click', (event) => {
+pollOptionContainer.addEventListener('click', (event) => {
     if (event.target && event.target.classList.contains('btn-dark')) {
         const pollOptionID = event.target.getAttribute('pollOption-id');
         openVoteModal(pollOptionID);
